@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './BuildControls.module.css'
 import BuildControl from './BuildControl/BuildControl';
 
-const BuildControls = ({ ingredientAdded,ingredientRemoved,ingredientsArray ,price ,orderHandle,lessHandle}) => {
+const BuildControls = ({ ingredientAdded,ingredientRemoved,ingredientsArray ,price ,orderHandle,lessHandle,purchasingHandle}) => {
     
     return (
 
@@ -21,7 +21,7 @@ const BuildControls = ({ ingredientAdded,ingredientRemoved,ingredientsArray ,pri
                     />)
                 })
             }
-            <button className={styles.OrderButton} disabled={orderHandle(ingredientsArray)}>Order Now</button>
+            <button className={styles.OrderButton} disabled={orderHandle(ingredientsArray)} onClick={purchasingHandle}>Order Now</button>
         </div>
     )
 };
