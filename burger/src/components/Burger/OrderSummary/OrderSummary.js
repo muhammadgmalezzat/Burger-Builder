@@ -1,10 +1,8 @@
-import React from 'react'
+import React from 'react';
 import Auxiliary from '../../../HOC/auxiliary';
-import Button from '../../../components/UI/Button/Button'
+import Button from '../../../components/UI/Button/Button';
 
 const OrderSummary = ({ ingredients,totalPrice ,purchaseCancel,purchaseContinue}) => {
-    console.log({ingredients})
-
     return (
         <Auxiliary>
             <div>OrderSummary</div>
@@ -22,8 +20,6 @@ const OrderSummary = ({ ingredients,totalPrice ,purchaseCancel,purchaseContinue}
             <Button btnType="Danger" clicked={purchaseCancel}>Cancel</Button>
             <Button btnType="Success" clicked={purchaseContinue}>Continue</Button>
         </Auxiliary>
-
     )
 };
-
 export default OrderSummary

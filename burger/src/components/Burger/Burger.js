@@ -4,20 +4,13 @@ import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
 
 
 const Burger = ({ingredientsFromBuilderBurger}) => {
-    //console.log(ingredientsFromBuilderBurger);
     let gredients = [];
-        //console.log(`${ingredient.name} <BurgerIngredient key=${index+i}  type=${ingredient.name} />`)
-        //return <BurgerIngredient key={index+i}  type={ingredient.name} />
     // eslint-disable-next-line no-lone-blocks
     {
         ingredientsFromBuilderBurger.map((ingredient) => {
         for (var i = 0; i < ingredient.quantity; i++){gredients.push(ingredient.name );}
         return (gredients)
         })
-
-        //console.log(gredients)
-        
-        
     }
     return (
         <div className={styles.Burger}>
